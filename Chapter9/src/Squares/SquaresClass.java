@@ -11,7 +11,7 @@ Course: Computer Science 30
 */
 
 
-//Put squaresclass into squares package
+//Put squares class into squares package
 package Squares;
 
 import java.util.Scanner;
@@ -23,7 +23,7 @@ public class SquaresClass
 	//Squares array 
 	static int [] Squares = {0,1,2,3,4};
 	
-	static String[] userInput;
+	static int userInput;
 		
 	//numElements variable retrieves the length of the array
 	static int numElements = Squares.length;
@@ -34,26 +34,29 @@ public class SquaresClass
 		public static void main(String[] args) 
 		{
 			Scanner input = new Scanner(System.in);
-			
+		
+			//Variable for user input
 			int userInp;
 			
-			System.out.println("What number between 0 and 4 would you like to know the square of?");
-						
 			userInp = input.nextInt();
 			
-			userInput =  new String[userInp];
+			//Prompts the user to pick a number between 0 and 4 
+			System.out.println("What number between 0 and 4 would you like to know the square of?");
+			
+			
+
 			
 			//for loop to go through all elements in the array
-			for (int i = 0; i < numElements ; i++)  
+			for(int i = 0; i < numElements;i++) 
 			{
-	            Squares[i] = Squares[i] * Squares[i];
+				Squares[i]= i*i;
 			}
 			
+			//Prints out the square of the users number
+			System.out.println(Squares[userInp]);
 			
-			//print out Square of index
-			System.out.println("Array: " + Squares[0] + " " + Squares[1] + " " +
-					Squares[2] +  " " + Squares[3] + " " + Squares[4]);
 		}
+		
 	}
 
 
