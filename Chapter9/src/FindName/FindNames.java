@@ -22,7 +22,7 @@ public class FindNames
 		
 		{
 	
-	//Location variable 
+	//Location of word variable 
     int location;
     
     //FindName variable
