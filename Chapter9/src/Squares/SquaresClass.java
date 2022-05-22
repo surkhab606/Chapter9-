@@ -54,6 +54,7 @@ public class SquaresClass
 			
 			//Prints out the square of the users number
 			System.out.println(Squares[userInp]);
+			input.close();
 			
 		}
 		
