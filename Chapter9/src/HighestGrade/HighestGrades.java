@@ -62,3 +62,18 @@ public class HighestGrades
 		}
 }
 
+/* SCREEN DUMP
+ 
+Please enter five grades between 0 and 100%:
+45
+Please enter five grades between 0 and 100%:
+60
+Please enter five grades between 0 and 100%:
+100
+Please enter five grades between 0 and 100%:
+58
+Please enter five grades between 0 and 100%:
+90
+The highest grade is: 100%
+
+*/
