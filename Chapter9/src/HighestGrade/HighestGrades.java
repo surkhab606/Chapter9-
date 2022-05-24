@@ -39,7 +39,7 @@ public class HighestGrades
 			{
 				
 			//Prompts the user to enter grades	
-			System.out.println("Please Enter The Grade between 0 and 100");
+			System.out.println("Please enter five grades between 0 and 100%:");
 			grades[i] = input.nextInt();
 			
 		
@@ -54,7 +54,7 @@ public class HighestGrades
 			}
 			
 			//Outputs the highest grade
-			System.out.println("Highest Grade is: " + HighGrd);
+			System.out.println("The highest grade is: " + HighGrd + "%");
 			
 			input.close();
 			

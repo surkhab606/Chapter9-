@@ -42,8 +42,6 @@ public class SquaresClass
 			
 			//Prompts the user to pick a number between 0 and 4 
 			System.out.println("What number between 0 and 4 would you like to know the square of?");
-			
-			
 
 			
 			//for loop to go through all elements in the array

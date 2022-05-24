@@ -31,7 +31,7 @@ public class FindNames
 	
 	//Prompts user for the number of names they would like in the array
 	Scanner inp = new Scanner(System.in);
-	System.out.println("How many names would you like to have in the array");
+	System.out.println("How many names would you like to have in the array?");
 	int userInput = inp.nextInt();
 
 	
@@ -55,11 +55,17 @@ public class FindNames
 	
 	
 	//Calls on the Search method to see if the name the user inputted is in the array
-	location = Search.linear(nameArray, FindName);
+	location = Search.linear(nameArray, FindName) + 1;
 	if (location == -1)
 	{
 		//If the name is not in the array, output this message
 		System.out.println("Sorry, the name is not in the array");
+	}
+	
+	else if (location == 0)
+	{
+		location = + 1;
+		System.out.println("The first occurence of the word is found at " + location);
 	}
 	
 	else 
@@ -74,4 +80,31 @@ public class FindNames
 }
 	
 	
+/* SCREEN DUMP
 
+How many names would you like to have in the array?
+2
+Please type in the names you would like for the array
+John
+Please type in the names you would like for the array
+Jeff
+What name would you like to find?
+Jeff
+The first occurence of the word is found at 2
+
+
+
+
+
+How many names would you like to have in the array?
+2
+Please type in the names you would like for the array
+Jeff
+Please type in the names you would like for the array
+Jack
+What name would you like to find?
+Jeff
+The first occurence of the word is found at 1
+
+ 
+*/
